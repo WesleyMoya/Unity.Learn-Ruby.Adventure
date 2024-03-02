@@ -27,8 +27,8 @@ public class RubyController : MonoBehaviour
         //quando está sendo pressionado a tecla para a esquerda, o valor da variavel horizontal vai ser -1, quando esta para a direita 1 e sem clicar 0.
         //acontece o mesmo para a posição Y, mas o 1 é para cima e o -1 para baixo.
         //deltaTime, contido em Time, é uma variável que o Unity preenche com o tempo que leva para um quadro ser renderizado.
-        position.x = position.x + 0.1f * horizontal * Time.deltaTime;
-        position.y = position.y + 0.1f * Vertical * Time.deltaTime;
+        position.x = position.x + 0.1f * horizontal;
+        position.y = position.y + 0.1f * Vertical;
 
         //atualiza a posição atual antes de dar update
         transform.position = position;
